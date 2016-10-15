@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Generated with glade 3.20.0 -->
+<interface>
+  <requires lib="gtk+" version="3.0"/>
+  <object class="GtkAdjustment" id="adjustment_date">
+    <property name="lower">29618</property>
+    <property name="upper">66142</property>
+    <property name="value">42401</property>
+    <property name="step_increment">1</property>
+    <property name="page_increment">10</property>
+  </object>
+  <object class="GtkApplicationWindow" id="win_main">
+    <property name="can_focus">False</property>
+    <property name="border_width">7</property>
+    <property name="resizable">False</property>
+    <child>
+      <object class="GtkGrid" id="grid_main">
+        <property name="visible">True</property>
+        <property name="can_focus">False</property>
+        <property name="row_spacing">7</property>
+        <property name="column_spacing">10</property>
+        <child>
+          <object class="GtkLabel" id="label_date1">
+            <property name="name">label_date1</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="valign">center</property>
+            <property name="hexpand">True</property>
+            <property name="label" translatable="yes">Date in _normal format</property>
+            <property name="use_underline">True</property>
+            <property name="mnemonic_widget">calendar_date</property>
+          </object>
+          <packing>
+            <property name="left_attach">0</property>
+            <property name="top_attach">0</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkCalendar" id="calendar_date">
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="halign">center</property>
+            <property name="valign">center</property>
+            <property name="hexpand">False</property>
+            <property name="vexpand">False</property>
+            <property name="year">2016</property>
+            <property name="month">9</property>
+            <property name="day">15</property>
+            <signal name="day-selected" handler="on_calendar_date_day_selected" swapped="no"/>
+          </object>
+          <packing>
+            <property name="left_attach">0</property>
+            <property name="top_attach">1</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel" id="label_date2">
+            <property name="name">label_date1</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="hexpand">True</property>
+            <property name="vexpand">False</property>
+            <property name="label" translatable="yes">Date in _iSeries format</property>
+            <property name="use_underline">True</property>
+            <property name="mnemonic_widget">spin_date</property>
+          </object>
+          <packing>
+            <property name="left_attach">2</property>
+            <property name="top_attach">0</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkSpinButton" id="spin_date">
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="halign">center</property>
+            <property name="valign">center</property>
+            <property name="hexpand">False</property>
+            <property name="vexpand">False</property>
+            <property name="adjustment">adjustment_date</property>
+            <property name="numeric">True</property>
+            <property name="value">42404</property>
+            <signal name="value-changed" handler="on_spin_date_value_changed" swapped="no"/>
+          </object>
+          <packing>
+            <property name="left_attach">2</property>
+            <property name="top_attach">1</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkSeparator" id="separator">
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="hexpand">False</property>
+            <property name="vexpand">True</property>
+            <property name="orientation">vertical</property>
+          </object>
+          <packing>
+            <property name="left_attach">1</property>
+            <property name="top_attach">0</property>
+            <property name="height">2</property>
+          </packing>
+        </child>
+      </object>
+    </child>
+  </object>
+</interface>

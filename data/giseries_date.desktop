@@ -1,0 +1,13 @@
+[Desktop Entry]
+Version=1.0
+Encoding=UTF-8
+Type=Application
+Name=giSeriesDate
+Comment=Convert dates in iSeries format
+Comment[en]=Convert dates in iSeries format
+Comment[it]=Converte date in formato iSeries
+Terminal=false
+Categories=GTK;
+Icon=giseries_date
+TryExec=giseries_date
+Exec=giseries_date
